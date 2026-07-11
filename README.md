@@ -47,10 +47,10 @@ graph TD
     A --> D[Appwrite Storage]
     A --> E[Google Gemini AI]
 
-    C ---|Real-time Sync| F[OPD Queue Manager]
-    C ---|Metadata| G[Document Workflow]
-    D ---|Large Files| G
-    E ---|Clinical Scribe| H[Live Consultation]
+    C -->|Real-time Sync| F[OPD Queue Manager]
+    C -->|Metadata| G[Document Workflow]
+    D -->|Large Files| G
+    E -->|Clinical Scribe| H[Live Consultation]
 ```
 
 - **Frontend**: React 19 (Concurrent Mode), TypeScript, Tailwind CSS v4, Recharts, Framer Motion
